@@ -1,3 +1,4 @@
+#[cfg(not(feature = "std"))]
 pub use sha2;
 
 #[cfg(test)]
