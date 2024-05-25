@@ -1,12 +1,5 @@
-pub use sha2;
+#![no_std]
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+extern crate sha2;
 
-    #[test]
-    fn it_works() {
-        use sha2::Digest;
-        let _ = sha2::Sha256::new();
-    }
-}
+pub use sha2::{Digest, Sha256, Sha512};
